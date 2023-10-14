@@ -1,0 +1,851 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Introducción a Bootstrap</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="css/app.css">
+    <!-- asi es el link de boostrap -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+</head>
+
+<body>
+    <style>
+        /* * {
+            margin: 0 !important;
+            padding: 0 !important;
+            box-sizing: border-box !important;
+        }
+
+        .container {
+            margin: 0 auto !important;
+        } */
+
+        .img-container {
+            height: 500px;
+        }
+
+        .img-container>img {
+            width: 100%;
+            object-fit: cover;
+        }
+
+        .con-img {
+            padding: 0;
+        }
+
+        .con-img>img {
+            width: 100%;
+            object-fit: cover;
+
+        }
+
+        .carrusel-container {
+            max-width: 600px;
+            margin: 0 auto;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+            border-radius: 10px;
+            overflow: hidden;
+        }
+
+        .carousel-inner {
+            border-radius: 10px;
+            ;
+            /* Ajusta la altura máxima según tus preferencias */
+        }
+
+        .carousel-item img {
+            object-fit: cover;
+            width: 100%;
+            height: 400px;
+            /* Las imágenes se ajustarán a la altura máxima del carrusel */
+        }
+
+        .carousel-indicators {
+            bottom: 10px;
+        }
+    </style>
+
+    <header class="header p-5 mb-5">
+        <h1 class="text-center">bienvenido a las clases de boostrap</h1>
+        <p class="text-center text-white">vamos con todo hasta el ultimo GA</p>
+    </header>
+
+    <main>
+        <section class="seccion min-300">
+            <h1 class="text-center my-5 heading">Contenedores</h1>
+            <!-- container te deja al centro y te da un centro de margen -->
+            <div class="container text-center border bg-primary mt-sm-3">contenido</div>
+
+
+            <!-- container-fluid te deja una fila entera normal -->
+            <div class="container-fluid border bg-primary mt-sm-3">contenido</div>
+
+            <!-- contenedore adaptando al dispositivo em Media Quiries  -->
+            <!-- Contenido para pantallas pequeñas -->
+            <div class="container-sm bg-primary mt-2 text-white">contenido sm-> chico mayor a 576px </div>
+
+            <!-- Contenido para pantallas medianas -->
+            <div class="container-md bg-primary mt-2 text-white">contenido md-> mediano mayor a 768px </div>
+
+            <!-- Contenido para pantallas grandes -->
+            <div class="container-lg bg-primary mt-2 text-white">contenido lg-> mayor de 992px </div>
+
+            <!-- Contenido para pantallas extra grandes -->
+            <div class="container-xl bg-primary mt-2 text-white">container xl-> mayor a 1200px</div>
+
+            <!-- Contenido para pantallas extra bien grandes -->
+            <div class="contaienr-xxl bg-primary mt-2 text-white">container xxl-> mayor a 1400px</div>
+        </section>
+
+
+        <section class="seccion">
+            <h1 class="text-center my-5 heading">grid</h1>
+            <div class="container-xl">
+                <!-- dato importante cada columna piede alcanzar una fila solo 12 col -->
+                <div class="row">
+                    <div class="col-md-4">
+                        ipsum dolor sit amet consectetur adipisicing
+                        elit. Vitae at nam, dignissimos adipisci, sequi officia autem cumque
+                        quo culpa eveniet reprehenderit aliquam omnis perferendis dicta quibusdam?
+                        Harum officiis debitis nemo?
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam ex commodi aliquam et dolor
+                        quo provident minus vel dicta. Doloremque inventore, molestiae magnam
+                        alias expedita tenetur velit dignissimos fuga commodi.
+                    </div>
+                    <div class="col-sm-6 col-md-4 mt-2">Lorem ipsum dolor sit amet consectetur adipisicing
+                        elit. Vitae at nam, dignissimos adipisci, sequi officia autem cumque
+                        quo culpa eveniet reprehenderit aliquam omnis perferendis dicta quibusdam?
+                        Harum officiis debitis nemo?
+                    </div>
+                    <div class="col-sm-6 col-md-4 mt-2">Lorem ipsum dolor sit amet consectetur adipisicing
+                        elit. Vitae at nam, dignissimos adipisci, sequi officia autem cumque
+                        quo culpa eveniet reprehenderit aliquam omnis perferendis dicta quibusdam?
+                        Harum officiis debitis nemo?
+                    </div>
+                    <div class="col-sm-6 col-md-4 mt-2">Lorem ipsum dolor sit amet consectetur adipisicing
+                        elit. Vitae at nam, dignissimos adipisci, sequi officia autem cumque
+                        quo culpa eveniet reprehenderit aliquam omnis perferendis dicta quibusdam?
+                        Harum officiis debitis nemo?
+                    </div>
+                    <div class="col-sm-6 col-md-4 mt-2">Lorem ipsum dolor sit amet consectetur adipisicing
+                        elit. Vitae at nam, dignissimos adipisci, sequi officia autem cumque
+                        quo culpa eveniet reprehenderit aliquam omnis perferendis dicta quibusdam?
+                        Harum officiis debitis nemo?
+                    </div>
+                    <div class="col-sm-6 col-md-4 mt-2">Lorem ipsum dolor sit amet consectetur adipisicing
+                        elit. Vitae at nam, dignissimos adipisci, sequi officia autem cumque
+                        quo culpa eveniet reprehenderit aliquam omnis perferendis dicta quibusdam?
+                        Harum officiis debitis nemo?
+                    </div>
+                    <div class="col-sm-6 col-md-4 mt-2">Lorem ipsum dolor sit amet consectetur adipisicing
+                        elit. Vitae at nam, dignissimos adipisci, sequi officia autem cumque
+                        quo culpa eveniet reprehenderit aliquam omnis perferendis dicta quibusdam?
+                        Harum officiis debitis nemo?
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Tipografia -->
+        <section class="seccion">
+            <h1 class="text-center my-md-4 my-sm-3 heading">Tipografia</h1>
+            <h1>valor sin display</h1>
+            <!-- en displays clases vienen predeterminado-->
+            <h1 class="display-1">Encabezado</h1>
+            <h2 class="display-2">Encabezado</h2>
+            <h3 class="display-3">Encabezado</h3>
+            <h4 class="display-4">Encabezado</h4>
+            <h5 class="display-6">Encabezado</h5>
+
+            <!-- fontSize vienen predeterminado-->
+            <h1 class="fs-1 fw-light">Encabezado con font Size</h1>
+            <h1 class="fs-5 fw-light">Encabezado con font Size</h1>
+            <h1 class="fs-3 fw-light">Encabezado con font Size</h1>
+            <h1 class="fs-4 fw-light">Encabezado con font Size</h1>
+            <h1 class="fs-5 fw-light">Encabezado con font Size</h1>
+
+            <!-- texto posiciones -->
+            <p class="display-6 text-end">texto en la vanguardia posiciones</p>
+            <p class="display-6 text-start">texto en la vanguardia posiciones</p>
+            <p class="display-6 text-center">texto en la vanguardia posiciones</p>
+
+            <!-- ahora con media queries -->
+            <p class="display-6 text-sm-center text-md-end text-lg-start">texto con media queries</p>
+
+            <!--convertir en palabras a mayusculas , minisculas , titulos -->
+            <p class="display-6 text-uppercase">palabras mayuscula</p>
+            <p class="display-6 text-lowercase">palabras minuscula</p>
+            <p class="display-6 text-capitalize">palabras de un titulo prinicipal</p>
+        </section>
+
+        <!-- colores -->
+        <section class="seccion">
+            <h1 class="text-center my-5  heading">Colores</h1>
+            <!--text-black : es para la opacidad de los colores en el texto-->
+            <p class="display-6 text-black-50">color1</p>
+            <p class="display-6 text-primary">color2</p>
+
+            <!-- colores de fonfo -->
+            <p class="text-bg-info text-center text-white">colores de fondo</p>
+            <p class="text-bg-info text-start text-white">colores de fondo</p>
+
+        </section>
+
+        <section class="seccion">
+            <h1 class="text-capitalize text-center my-5 heading">imagenes</h1>
+
+            <div class="container border border-5">
+                <div class="row">
+                    <div class="col-6">
+                        <div class="img-container">
+                            <!-- img-fluid te ayuda hacer responsi y te adapta al contenedor  -->
+                            <!-- img-thumbaild te da un marco -->
+                            <img class="img-fluid h-100"
+                                src="https://w0.peakpx.com/wallpaper/251/548/HD-wallpaper-cars-nature.jpg"
+                                alt="imagen de carro" srcset="">
+                        </div>
+                    </div>
+
+                    <div class="col-sm-6 col-md-6">
+                        <div class="row img-container">
+                            <div class="col-6 h-50 con-img">
+                                <img class="img-fluid h-100"
+                                    src="https://w0.peakpx.com/wallpaper/251/548/HD-wallpaper-cars-nature.jpg"
+                                    alt="imagen de carro" srcset="">
+                            </div>
+                            <div class="col-6 h-50 con-img">
+                                <img class="img-fluid h-100"
+                                    src="https://w0.peakpx.com/wallpaper/251/548/HD-wallpaper-cars-nature.jpg"
+                                    alt="imagen de carro" srcset="">
+                            </div>
+                            <div class="col-6 h-50 con-img">
+                                <img class="img-fluid h-100"
+                                    src="https://w0.peakpx.com/wallpaper/251/548/HD-wallpaper-cars-nature.jpg"
+                                    alt="imagen de carro" srcset="">
+                            </div>
+                            <div class="col-6 h-50 con-img">
+                                <img class="img-fluid h-100"
+                                    src="https://w0.peakpx.com/wallpaper/251/548/HD-wallpaper-cars-nature.jpg"
+                                    alt="imagen de carro" srcset="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="seccion">
+            <h1 class="text-capitalize text-center my-5 heading">botones</h1>
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-12  text-center col-md-6">
+                        <h1 class=" my-5">Botones a traves de colores</h1>
+                        <button type="button" class="text-capitalize p-1 btn btn-primary">agregar</button>
+                        <button type="button" class="text-capitalize p-1 btn btn-info">eliminar</button>
+                        <button type="button" class="text-capitalize p-1 btn btn-danger">reponer</button>
+                        <button type="button" class="text-capitalize p-1 btn btn-secondary">reposicion</button>
+                        <button type="button" class="text-capitalize p-1 btn btn-dark">reposicion</button>
+                    </div>
+                    <div class="col-sm-12 text-center col-md-6">
+                        <h1 class=" my-5">Botones a traves de outline</h1>
+                        <button type="button" class="text-capitalize p-1 btn btn-outline-primary">agregar</button>
+                        <button type="button" class="text-capitalize p-1 btn btn-outline-info">eliminar</button>
+                        <button type="button" class="text-capitalize p-1 btn btn-outline-danger">reponer</button>
+                        <button type="button" class="text-capitalize p-1 btn btn-outline-secondary">reposicion</button>
+                        <button type="button" class="text-capitalize p-1 btn btn-outline-dark">reposicion</button>
+                    </div>
+
+                    <div class="col-12 text-center">
+                        <h1 class=" my-5">Botones a traves de varias formas de codigo</h1>
+                        <button type="button" class="text-capitalize p-1 btn btn-outline-primary">button</button>
+                        <a href="#" class="text-capitalize p-1 btn btn-outline-info">a</a>
+                        <input type="submit" value="input" class="text-capitalize p-1 btn btn-outline-danger">
+                    </div>
+                </div>
+            </div>
+            <h1 class="text-capitalize text-center my-5 heading">botones con iconos</h1>
+            <div class="container text-center">
+
+                <button class="btn btn-outline-info p-1 m-1">boton con icono <i class="bi bi-xbox"></i> </button>
+                <button class="btn btn-outline-dark p-1 m-1">boton con icono <i class="bi bi-robot"></i> </button>
+                <button class="btn btn-outline-secondary p-1 m-1">boton con icono <i class="bi bi-cart"></i> </button>
+                <button class="btn btn-outline-success p-1 m-1">boton con icono <i
+                        class="bi bi-database-dash"></i></button>
+
+                <div class="m-3">
+                    <div class="input-group w-25 m-auto">
+                        <span class="input-group-text" id="basic-addon1">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                class="bi bi-database-dash" viewBox="0 0 16 16">
+                                <path
+                                    d="M12.5 16a3.5 3.5 0 1 0 0-7 3.5 3.5 0 0 0 0 7ZM11 12h3a.5.5 0 0 1 0 1h-3a.5.5 0 0 1 0-1Z">
+                                </path>
+                                <path
+                                    d="M12.096 6.223A4.92 4.92 0 0 0 13 5.698V7c0 .289-.213.654-.753 1.007a4.493 4.493 0 0 1 1.753.25V4c0-1.007-.875-1.755-1.904-2.223C11.022 1.289 9.573 1 8 1s-3.022.289-4.096.777C2.875 2.245 2 2.993 2 4v9c0 1.007.875 1.755 1.904 2.223C4.978 15.71 6.427 16 8 16c.536 0 1.058-.034 1.555-.097a4.525 4.525 0 0 1-.813-.927C8.5 14.992 8.252 15 8 15c-1.464 0-2.766-.27-3.682-.687C3.356 13.875 3 13.373 3 13v-1.302c.271.202.58.378.904.525C4.978 12.71 6.427 13 8 13h.027a4.552 4.552 0 0 1 0-1H8c-1.464 0-2.766-.27-3.682-.687C3.356 10.875 3 10.373 3 10V8.698c.271.202.58.378.904.525C4.978 9.71 6.427 10 8 10c.262 0 .52-.008.774-.024a4.525 4.525 0 0 1 1.102-1.132C9.298 8.944 8.666 9 8 9c-1.464 0-2.766-.27-3.682-.687C3.356 7.875 3 7.373 3 7V5.698c.271.202.58.378.904.525C4.978 6.711 6.427 7 8 7s3.022-.289 4.096-.777ZM3 4c0-.374.356-.875 1.318-1.313C5.234 2.271 6.536 2 8 2s2.766.27 3.682.687C12.644 3.125 13 3.627 13 4c0 .374-.356.875-1.318 1.313C10.766 5.729 9.464 6 8 6s-2.766-.27-3.682-.687C3.356 4.875 3 4.373 3 4Z">
+                                </path>
+                            </svg>
+                        </span>
+                        <input type="text" class="form-control w" placeholder="Input group example"
+                            aria-label="Input group example" aria-describedby="basic-addon1">
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+
+        <section class="seccion">
+            <h1 class=" text-center my-5 heading">Margin y Padding</h1>
+            <!-- margin o padding  me -- es algo margin rigth
+                margin o padding ms ---es algo margin lefth
+            margin  -->
+            <div class="container text-center display-6 bg-danger text-white ms-5">
+                margin
+            </div>
+
+            <div class="container text-center display-6 bg-danger text-white ms-5">
+                padding
+            </div>
+            <a href="#" class="mx-auto d-block ">hola</a>
+        </section>
+
+        <section class="seccion">
+            <h1 class="text-capitalize  text-center my-5 heading">display grid </h1>
+            <!-- display grid te ayuda a separar con la propiedad de gap -->
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="d-grid gap-2">
+                        <button class="btn btn-primary" type="button">Botón 1</button>
+                        <button class="btn btn-secondary" type="button">Botón 2</button>
+                        <button class="btn btn-secondary" type="button">Botón 2</button>
+                    </div>
+                </div>
+                <hr>
+                <div class="col-md-6">
+                    <div class="d-grid gap-2">
+                        <button class="btn btn-success" type="button">Botón 3</button>
+                        <button class="btn btn-danger" type="button">Botón 4</button>
+                        <button class="btn btn-danger" type="button">Botón 4</button>
+
+                    </div>
+                </div>
+            </div>
+            </div>
+        </section>
+
+
+        <!--spiner-->
+        <section class="seccion">
+            <h1 class=" text-center my-5 heading">spinner...</h1>
+            <div class="d-flex align-items-center flex-column gap-5">
+                <!-- //al declarar roles nos basamos a la accesibilidad para las personas 
+                ciegas donde la lectura asisitida se va a referir que es lo que hace  -->
+
+                <div class="spinner-border text-info" role="status">
+                    <!-- visually-hidden -- es para que la lectura asisitida lea la infomracion 
+                    y le permita dar a la persona vulnerable es bueno para la accesibilidad -->
+                    <span class="visually-hidden">Cargando...</span>
+                </div>
+
+                <div class="spinner-grow bg-primary" roles="status">
+                    <span class="visually-hidden">cargando...</span>
+                </div>
+            </div>
+        </section>
+
+
+
+
+
+        <!--card-->
+        <section class="seccion">
+            <!-- es muy interesante ya que vien con grid responsi -->
+            <h1 class="text-capitalize text-center heading my-5">cards</h1>
+
+            <div class="container">
+                <div class="row gap-sm-2 gap-md-0">
+                    <div class="col-sm-10 col-md-6 col-xl-4 my-3">
+                        <!-- //aka donde se pone los cards -->
+                        <div class="card border-dark-subtle rounded-2 shadow">
+                            <!-- para que la iamgen sea responsibo es img-fluid pero en el card se pone card-img-top -->
+                            <p class="card-header">validando infomracion</p>
+                            <img class="card-img-top rounded-2" src="img/curso_2.jpg" alt="" srcset="">
+                            <div class="card-body">
+                                <h3 class="card-title text-capitalize">curso de guitarra</h3>
+                                <p class="card-text">Descripcion de curso de guitarra</p>
+                                <a href="#" class="btn btn-outline-info">Tomar curso</a>
+                                <a href="#" class="btn btn-outline-primary">comprar curso <i class="bi bi-cart"></i></a>
+                            </div>
+                            <div class="card-footer">
+                                hola mundo
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-sm-10 col-md-6 col-xl-4 my-3">
+                        <!-- //aka donde se pone los cards -->
+                        <div class="card border-dark-subtle rounded-2 shadow">
+                            <!-- para que la iamgen sea responsibo es img-fluid pero en el card se pone card-img-top -->
+                            <p class="card-header">validando infomracion</p>
+                            <img class="card-img-top rounded-2" src="img/curso_2.jpg" alt="" srcset="">
+                            <div class="card-body">
+                                <h3 class="card-title text-capitalize">curso de guitarra</h3>
+                                <p class="card-text">Descripcion de curso de guitarra</p>
+                                <a href="#" class="btn btn-outline-info">Tomar curso</a>
+                                <a href="#" class="btn btn-outline-primary">comprar curso <i class="bi bi-cart"></i></a>
+                            </div>
+                            <div class="card-footer">
+                                hola mundo
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-sm-10 col-md-6 col-xl-4 my-3">
+                        <!-- //aka donde se pone los cards -->
+                        <div class="card border-dark-subtle rounded-2 shadow">
+                            <!-- para que la iamgen sea responsibo es img-fluid pero en el card se pone card-img-top -->
+                            <p class="card-header">validando infomracion</p>
+                            <img class="card-img-top rounded-2" src="img/curso_2.jpg" alt="" srcset="">
+                            <div class="card-body">
+                                <h3 class="card-title text-capitalize">curso de guitarra</h3>
+                                <p class="card-text">Descripcion de curso de guitarra</p>
+                                <a href="#" class="btn btn-outline-info">Tomar curso</a>
+                                <a href="#" class="btn btn-outline-primary">comprar curso <i class="bi bi-cart"></i></a>
+                            </div>
+                            <div class="card-footer">
+                                hola mundo
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-sm-10 col-md-6 col-xl-4 my-3">
+                        <!-- //aka donde se pone los cards -->
+                        <div class="card border-dark-subtle rounded-2 shadow">
+                            <!-- para que la iamgen sea responsibo es img-fluid pero en el card se pone card-img-top -->
+                            <p class="card-header">validando infomracion</p>
+                            <img class="card-img-top rounded-2" src="img/curso_2.jpg" alt="" srcset="">
+                            <div class="card-body">
+                                <h3 class="card-title text-capitalize">curso de guitarra</h3>
+                                <p class="card-text">Descripcion de curso de guitarra</p>
+                                <a href="#" class="btn btn-outline-info">Tomar curso</a>
+                                <a href="#" class="btn btn-outline-primary">comprar curso <i class="bi bi-cart"></i></a>
+                            </div>
+                            <div class="card-footer">
+                                hola mundo
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-sm-10 col-md-6 col-xl-4 my-3">
+                        <!-- //aka donde se pone los cards -->
+                        <div class="card border-dark-subtle rounded-2 shadow">
+                            <!-- para que la iamgen sea responsibo es img-fluid pero en el card se pone card-img-top -->
+                            <p class="card-header">validando infomracion</p>
+                            <img class="card-img-top rounded-2" src="img/curso_2.jpg" alt="" srcset="">
+                            <div class="card-body">
+                                <h3 class="card-title text-capitalize">curso de guitarra</h3>
+                                <p class="card-text">Descripcion de curso de guitarra</p>
+                                <a href="#" class="btn btn-outline-info">Tomar curso</a>
+                                <a href="#" class="btn btn-outline-primary">comprar curso <i class="bi bi-cart"></i></a>
+                            </div>
+                            <div class="card-footer">
+                                hola mundo
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div class="col-sm-10 col-md-6 col-xl-4 my-3">
+                        <!-- //aka donde se pone los cards -->
+                        <div class="card border-dark-subtle rounded-2 shadow">
+                            <!-- para que la iamgen sea responsibo es img-fluid pero en el card se pone card-img-top -->
+                            <p class="card-header">validando infomracion</p>
+                            <img class="card-img-top rounded-2" src="img/curso_2.jpg" alt="" srcset="">
+                            <div class="card-body">
+                                <h3 class="card-title text-capitalize">curso de guitarra</h3>
+                                <p class="card-text">Descripcion de curso de guitarra</p>
+                                <a href="#" class="btn btn-outline-info">Tomar curso</a>
+                                <a href="#" class="btn btn-outline-primary">comprar curso <i class="bi bi-cart"></i></a>
+                            </div>
+                            <div class="card-footer">
+                                hola mundo
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div class="col-sm-10 col-md-6 col-xl-4 my-3">
+                        <!-- //aka donde se pone los cards -->
+                        <div class="card border-dark-subtle rounded-2 shadow">
+                            <!-- para que la iamgen sea responsibo es img-fluid pero en el card se pone card-img-top -->
+                            <p class="card-header">validando infomracion</p>
+                            <img class="card-img-top rounded-2" src="img/curso_2.jpg" alt="" srcset="">
+                            <div class="card-body">
+                                <h3 class="card-title text-capitalize">curso de guitarra</h3>
+                                <p class="card-text">Descripcion de curso de guitarra</p>
+                                <a href="#" class="btn btn-outline-info">Tomar curso</a>
+                                <a href="#" class="btn btn-outline-primary">comprar curso <i class="bi bi-cart"></i></a>
+                            </div>
+                            <div class="card-footer">
+                                hola mundo
+                            </div>
+                        </div>
+                    </div>
+
+
+
+                    <div class="col-sm-10 col-md-6 col-xl-4 my-3">
+                        <!-- //aka donde se pone los cards -->
+                        <div class="card border-dark-subtle rounded-2 shadow">
+                            <!-- para que la iamgen sea responsibo es img-fluid pero en el card se pone card-img-top -->
+                            <p class="card-header">validando infomracion</p>
+                            <img class="card-img-top rounded-2" src="img/curso_2.jpg" alt="" srcset="">
+                            <div class="card-body">
+                                <h3 class="card-title text-capitalize">curso de guitarra</h3>
+                                <p class="card-text">Descripcion de curso de guitarra</p>
+                                <a href="#" class="btn btn-outline-info">Tomar curso</a>
+                                <a href="#" class="btn btn-outline-primary">comprar curso <i class="bi bi-cart"></i></a>
+                            </div>
+                            <div class="card-footer">
+                                hola mundo
+                            </div>
+                        </div>
+                    </div>
+
+
+
+                    <div class="col-sm-10 col-md-6 col-xl-4 my-3">
+                        <!-- //aka donde se pone los cards -->
+                        <div class="card border-dark-subtle rounded-2 shadow">
+                            <!-- para que la iamgen sea responsibo es img-fluid pero en el card se pone card-img-top -->
+                            <p class="card-header">validando infomracion</p>
+                            <img class="card-img-top rounded-2" src="img/curso_2.jpg" alt="" srcset="">
+                            <div class="card-body">
+                                <h3 class="card-title text-capitalize">curso de guitarra</h3>
+                                <p class="card-text">Descripcion de curso de guitarra</p>
+                                <a href="#" class="btn btn-outline-info">Tomar curso</a>
+                                <a href="#" class="btn btn-outline-primary">comprar curso <i class="bi bi-cart"></i></a>
+                            </div>
+                            <div class="card-footer">
+                                hola mundo
+                            </div>
+                        </div>
+                    </div>
+
+
+
+
+
+                </div>
+
+            </div>
+        </section>
+
+        <section class="seccion">
+            <h1 class="text-capitalize text-center my-5 heading">formulario</h1>
+            <div class="container-xl">
+                <div class="row d-flex justify-content-center">
+                    <div class="col-md-6">
+                        <form action="" class="form">
+                            <legend class="text-capitalize">nuevo cliente</legend>
+                            <div>
+                                <label for="Nombre" class="form-label">
+                                    Nombre
+                                </label>
+                                <input id="Nombre" type="text" class="form-control">
+                            </div>
+
+                            <div class="my-2">
+                                <label for="Empresa" class="form-label">
+                                    Empresa
+                                </label>
+                                <input id="Empresa" type="text" class="form-control">
+                            </div>
+
+                            <div class="my-2">
+                                <label for="Telefono" class="form-label">
+                                    Telefono
+                                </label>
+                                <input id="Telefono" type="tel" class="form-control">
+                            </div>
+
+                            <div class="my-2">
+                                <label for="Email" class="form-label">
+                                    Email
+                                </label>
+                                <input id="Email" type="email" class="form-control">
+                            </div>
+
+                            <div class="my-3">
+                                <label for="paswoord" class="form-label">
+                                    Contraseña
+                                </label>
+                                <input id="paswoord" type="password" class="form-control">
+                            </div>
+
+                            <button class="btn btn-info">Enviar la infromacion</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+
+
+        <!--notigficaciones-->
+        <section class="seccion">
+            <!-- //los notificaciones se muestran mas en eventos donde se suguieren obtener el javascrit  -->
+            <h1 class="text-center text-capitalize my-5 heading">tosts (notificaciones)</h1>
+
+            <button class="btn btn-outline-info" id="btn-notificacion" href="#">notificaciones</button>
+            <!--al poner toast-header no se va a ver ya que en css de boostrap es display none -->
+            <!-- mientras que al poner hidden si se va er ya que lo habilita a traves de css -->
+            <div class="position-fixed bottom-0 end-0 p-3" style="z-index: 10;">
+
+                <!--aka donde comienza la notificacion de los datos-->
+                <div id="toast" class="toast hide" role="alert">
+
+                    <!--aka estamos dando estilos -->
+                    <div class="toast-body">
+                        <div class="toast-header">
+                            <!-- //me-auto lo que hace es que te deja a la derecha y lo restante bota a la izquierda -->
+                            <strong class="me-auto">Email</strong>
+                            <small>Hace 3 minuto</small>
+                            <!-- data-bs-dismiss="toast" es un componente solo para boostrap que para cerrar  el valor lo pasas es la id del contenedor padre -->
+                            <button type="button" data-bs-dismiss="toast" class="btn btn-close"></button>
+                        </div>
+                        <p class="toast-header">informacion recibida .. :</p>
+                        <div class="card">
+                            <img class="card-img-top rounded-2" src="img/curso_2.jpg" alt="" srcset="">
+                            <div class="card-body">
+                                <h3 class="card-title text-capitalize">curso de guitarra</h3>
+                                <p class="card-text">Descripcion de curso de guitarra</p>
+                                <a href="#" class="btn btn-outline-info">Tomar curso</a>
+                                <a href="#" class="btn btn-outline-primary">comprar curso <i class="bi bi-cart"></i></a>
+                            </div>
+                            <div class="card-footer">
+                                hola mundo
+                            </div>
+                        </div>
+                    </div>
+                    <!------------------------------------->
+
+                </div>
+            </div>
+        </section>
+
+        <section class="seccion">
+            <h1 class="text-center text-capitalize heading">carrusel</h1>
+
+            <div class="container-xl">
+
+                <!-- va ser la referencia al inindicadores donde encentra mapiado en el carousel -->
+                <div id="indicadores" class="carousel slide" data-bs-ride="carousel">
+
+                    <!-- tenemos los botones par navegar -->
+                    <div class="carousel-indicators">
+                        <!-- active va a estar cambiando y va agregando css -->
+                        <button class="active" type="button" data-bs-target="#indicadores"
+                            data-bs-slide-to="0"></button>
+                        <button type="button" data-bs-target="#indicadores" data-bs-slide-to="1"></button>
+                        <button type="button" data-bs-target="#indicadores" data-bs-slide-to="2"></button>
+                        <button type="button" data-bs-target="#indicadores" data-bs-slide-to="3"></button>
+                    </div>
+
+                    <!-- aka tenmos las imagenes  -->
+                    <div class="carousel-inner">
+                        <!-- active va a estar cambiando y va agregando css -->
+                        <div class="carousel-item active">
+                            <img src="img/galeria_01.jpg" alt="slide 1" class="d-block w-100">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="img/galeria_02.jpg" alt="slide 1" class="d-block w-100">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="img/galeria_03.jpg" alt="slide 1" class="d-block w-100">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="img/galeria_04.jpg" alt="slide 1" class="d-block w-100">
+                        </div>
+
+                        <button type="button" class="carousel-control-prev" data-bs-target="#indicadores"
+                            data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon"></span>
+                        </button>
+
+                        <button type="button" class="carousel-control-next" data-bs-target="#indicadores"
+                            data-bs-slide="next">
+                            <span class="carousel-control-next-icon"></span>
+                        </button>
+                    </div>
+                </div>
+
+
+            </div>
+        </section>
+        <!-- te recomiendo que veas los patrones  -->
+        <section class="seccion">
+            <h1 class="text-center text-capitalize heading">Modals</h1>
+            <!-- data-bs-toggle="modal" esto es la forma de llamar el api de boostrap para utilizar sus componenetes -->
+            
+            <button class="btn btn-outline-primary" data-bs-toggle="modal" data-bs-target="#modal">Ver
+                fornulario</button>
+
+
+            <!-- Modals -->
+            <!-- esto llamamos el data-bs-toggle="modal" para que haga referencia para ue salga el proyecto -->
+            <div id="modal" class="modal fade">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h2 class="modal-title">Nuevo cliente</h2>
+                            <button type="button" class="btn btn-close " data-bs-dismiss="modal"></button>
+                        </div>
+
+                        <div class="modal-body">
+                            <form class="form text-start mt-4 w-100 card p-4 m-auto" method="get">
+                                <div>
+                                    <label for="Nombre" class="form-label ">Nombre</label>
+                                    <input id="Nombre" type="text" class="form-control mb-3" required>
+                                </div>
+
+                                <div>
+                                    <label for="Apellido" class="form-label ">Apellido</label>
+                                    <input id="Apellido" type="text" class="form-control mb-3" required>
+                                </div>
+
+                                <div>
+                                    <label for="Edad" class="form-label ">Edad</label>
+                                    <input id="Edad" type="text" class="form-control mb-3" required>
+                                </div>
+
+                                <div>
+                                    <label for="Celular" class="form-label ">Celular</label>
+                                    <input id="Celular" type="text" class="form-control mb-3" required>
+                                </div>
+
+                                <div>
+                                    <label for="Mensaje" class="form-label ">Mensaje</label>
+                                    <input id="Mensaje" type="text" class="form-control mb-3" required>
+                                </div>
+
+                                <div class="modal-footer">
+                                    <input type="submit" value="Enviar Datos" class="btn btn-info">
+                                    <input type="reset" value="reset" class="btn btn-outline-secondary">
+                                </div>
+                            </form>
+
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+            </div>
+        </section>
+        <section class="container min-vh-100">
+            <h1 class="text-capitalize text-center heading">nav(navegacion)</h1>
+            <nav class="container-xl">
+                <ul class="nav flex-column  flex-md-row justify-content-evenly">
+                    <li class="nav-item"><a class="nav-link" href="#">Inicio</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Nosotros</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Tienda Virtual</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Contactos</a></li>
+                </ul>
+            </nav>
+        </section>
+
+        <section class="container min-vh-100">
+            <h1 class="text-capitalize text-center heading">nav(navegacion) con drop navenium</h1>
+            <nav class="container-xl">
+                <ul class="nav flex-column  flex-md-row justify-content-evenly">
+                    <li class="nav-item"><a class="nav-link" href="#">Inicio</a></li>
+                    <!--
+                        data-bs-toggle="dropdown" -- 
+                        ESTO ES PARA AL APLASTAR APARECE 
+                        DROPDOWN-ITEM
+                    -->
+                    <li class="nav-item">
+                        <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">Nosotros</a>
+                        <ul class="dropdown-menu"><!--ESTO VA A OCULTOR -->
+                            <li><a class="dropdown-item" href="#">Empresa</a></li>
+                            <li><a class="dropdown-item" href="#">Historia</a></li>
+                            <li><a class="dropdown-item" href="#">Oferta</a></li>
+                        </ul>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">Tienda Virtual </a>
+                        <ul class="dropdown-menu"><!--ESTO VA A OCULTOR -->
+                            <li><a class="dropdown-item" href="#">Empresa</a></li>
+                            <li><a class="dropdown-item" href="#">Historia</a></li>
+                            <li><a class="dropdown-item" href="#">Oferta</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item"><a class="nav-link" href="#">Contactos</a></li>
+                </ul>
+            </nav>
+        </section>
+
+
+
+        <section class="container min-vh-100">
+            <h1 class="text-center my-5 heading">Off Canvas</h1>
+            <button class="btn btn-outline-primary" type="button" data-bs-toggle="offcanvas" data-bs-target="#menu">
+                administracion
+            </button>
+
+            <div id="menu" class="offcanvas offcanvas-start">
+                <div class="offcanvas-header">
+                    <h1 class="offcanvas-title">Navegacion</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="offcanvas"></button>
+                </div>
+                <div class="offcanvas-body">
+                    <h5>Administracion</h5>
+                    <ul class="nav flex-column">
+                        <li class="nav-item"><a class="nav-link" href="#">Informacion</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#">Pedidos</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#">Tarjetas</a></li>
+                    </ul>
+                </div>
+
+
+
+
+            </div>
+        </section>
+
+
+
+    </main>
+
+
+
+    <!-- asi es el link del script de Boostrap -->
+    <script src="./js/bootstrap.bundle.min.js"></script>
+    <script>
+        //otra manera de hacer eventos 
+        document.querySelector('#btn-notificacion').onclick = e => {
+            e.preventDefault()
+
+            //mostrar el toods
+            const toastEL = document.querySelector('#toast')
+            //aka instaciamos un componente de boostrap que ya viene definido 
+            //por la libreria
+            const toast = new bootstrap.Toast(toastEL)
+            //el protytep so n las funciones asociadas del objeto 
+            toast.show()
+
+        }
+    </script>
+</body>
+
+</html>
